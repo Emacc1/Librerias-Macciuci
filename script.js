@@ -79,12 +79,31 @@ button5.innerHTML = `RETIRO`;
 
 
 // button.addEventListener(`onclick`, validarFormulario);
-button0.onclick=()=> alert(totalBel);
-button1.onclick=()=> alert(totalPal);
-button2.onclick=()=> alert(totalRet);
-button3.onclick=()=> alert(listaBString);
-button4.onclick=()=> alert(listaPString);
-button5.onclick=()=> alert(listaRString);
+button0.onclick=()=> swal.fire(
+        `El precio en promedio en Belgrano es: ` +totalBel,
+        `encuentre su proxima bivienda aqui`, 
+        `success`);
+    
+button1.onclick=()=> swal.fire(
+    `El precio en promedio en Palermo es: ` +totalPal,
+    `encuentre su proxima bivienda aqui`, 
+    `success`);
+button2.onclick=()=> swal.fire(
+    `El precio en promedio en Retiro es: ` +totalRet,
+    `encuentre su proxima bivienda aqui`, 
+    `success`);
+button3.onclick=()=> swal.fire(
+    `Propiedades en Belgrano ` +listaBString,
+    `encuentre su proxima bivienda aqui`, 
+    `success`);
+button4.onclick=()=> swal.fire(
+    `Propiedades en Palermo ` +listaPString,
+    `encuentre su proxima bivienda aqui`, 
+    `success`);
+button5.onclick=()=> swal.fire(
+    `Propiedades en Retiro ` +listaRString,
+    `encuentre su proxima bivienda aqui`, 
+    `success`);;
 
 
  
